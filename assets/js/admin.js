@@ -73,12 +73,12 @@ for (let element of arrayCompras) {
     const arrayProductosComprados = element.carrito;
     
 
-/*         let total = 0;
+        let total = 0;
         arrayProductosComprados.forEach(prod => {
             total += prod.precio * prod.cantidad;
         })
         //console.log (total);
-        const montoCompra = total; */
+        const montoCompra = total;
     
 
     let itemCompra = document.createElement ("div");
@@ -94,7 +94,7 @@ for (let element of arrayCompras) {
                                 <div class="col-8">
                                     <div class="detalleCompra col-11 d-flex justify-content-between">
                                         <h5>Monto de compra</h5>
-                                        <h5>$/*  */.-</h5>
+                                        <h5>$${montoCompra}.-</h5>
                                     </div>
                                     <div>
                                         <ul id="detalleCompra${element.id}">
