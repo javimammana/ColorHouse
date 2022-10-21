@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icono.ico">
+    <title>ColorHouse - Administrador</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="fixed-top">
+        <div>
+            <div class="lineaCeleste">
+            </div>
+            <div class="navBarra d-flex justify-content-between align-items-center">
+                <div class="logoImg ms-5">
+                    <a class="" href="../index.html"><img class="" src="../assets/img/logo.jpg" alt="Logo"></a>
+                </div>
+                <ul class="navList d-flex m-3">
+                    <li class="mx-3"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="mx-3"><a href="../pages/galeria.html">Galeria</a></li>
+                    <li class="mx-3"><a href="../pages/tienda.html">Tienda</a></li>
+                    <li class="mx-3"><a href="../pages/contacto.html">Contacto</a></li>
+                    <li class="mx-3"><a href="../pages/login.html"><img src="../assets/img/login.png" alt="Login"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lineaNaranja">
+
+        </div>
+    </nav>
+
+
+    <main class="mainClass py-5">
+        <div class="">
+            <div class="col-12">
+
+                <div id="login" class="v100 col-12">
+                    <div class="loginBox d-flex justify-content-center py-5">
+                        <form class="d-flex flex-column v100" name=form action="">
+                            <input class="loginForm my-2 p-2" type=text name=login placeholder="Usuario">
+                            <input class="loginForm my-2 p-2" type=password name=password placeholder="Contraseña">
+                            <input class="loginBtn my-1 p-1" onclick=go() type="button" value="Ingresar">
+                        </form>
+                    </div>
+                </div>
+
+
+                <div id="loguinBody" class="d-none">
+
+                    <div class="d-flex justify-content-center">
+
+                        <div class="col-10">
+
+                            <div class="my-5">
+                                <div class="adminConsultas d-flex justify-content-between px-5 me-2">
+                                    <h5>Potenciales Clientes</h5>
+                                </div class="my-5">
+                                <div id="contenderoPotencialesClientes" class="">
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="my-5">
+                                <div class="adminConsultas d-flex justify-content-between px-5 me-2">
+                                    <h5>Compras</h5>
+                                </div>
+                                <div id="contenedorCompras">
+
+                                </div>
+                            </div>
+
+
+                            <div class="my-5">
+                                <div class="adminConsultas d-flex justify-content-between px-5 me-2">
+                                    <h5>Consultas recibidas</h5>
+                                </div class="my-5">
+                                <div  id="contenedorConsultas">
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerBar fixed-bottom">
+            <div class="lineaBlanca">
+            </div>
+            <div class="d-flex justify-content-between">
+                <h5 class="ms-5 pt-2">© 2022 Mammana Javier, todos los derechos reservados.-</h5>
+                <ul class="d-flex align justify-content-end me-5">
+                    <li class="mx-2"><a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="FaceBook"></a></li>
+                    <li class="mx-2"><a href="https://twitter.com" target="_blank"><img src="../assets/img/tweeter.png" alt="Tweeter"></a></li>
+                    <li class="mx-2"><a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+
+    </footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="../assets/js/productos.js"></script>
+<script src="../assets/js/calculadora.js"></script>
+<script src="../assets/js/contacto.js"></script>
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

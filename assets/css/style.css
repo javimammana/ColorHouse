@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Tangerine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+  font-family: "Didact Gothic", sans-serif;
+  box-sizing: border-box;
+}
+
+.logoImg a img {
+  height: 30px;
+}
+
+.navBarra {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.lineaCeleste {
+  background-color: #4484CE;
+  height: 5px;
+}
+
+.lineaNaranja {
+  background-color: #F19F4D;
+  height: 5px;
+}
+
+.navList li a {
+  color: #606163;
+}
+.navList li a img {
+  height: 20px;
+}
+
+.mainClass {
+  background-image: url("../img/background.jpg");
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.cajaCalculadora {
+  background-color: #FFFFFF;
+}
+
+.cajaCalculadoraDos {
+  border: solid 2px #F19F4D;
+  border-radius: 10px;
+}
+
+.btnInicioCalculadora {
+  background-color: #F19F4D;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.btnInicioCalculos {
+  background-color: #606163;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.txtInicioCalculadora {
+  color: #4484CE;
+  font-size: 30px;
+}
+
+.listaParedes {
+  background-color: #F19F4D;
+}
+
+.btnCalcu {
+  background-color: #606163;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.formclass {
+  border-radius: 5px;
+  color: #606163;
+  border: solid 2px #F19F4D;
+}
+
+.contenedorSimulador {
+  border: solid 2px #F19F4D;
+  border-radius: 10px;
+}
+
+.txtCalcu {
+  color: #606163;
+}
+
+.paredCalcu {
+  border-bottom: solid 2px #FFFFFF;
+}
+.paredCalcu div h5 {
+  color: #FFFFFF;
+}
+.paredCalcu h5 {
+  color: #FFFFFF;
+}
+
+.footerBar {
+  height: 35px;
+  background-color: #4484CE;
+}
+.footerBar div ul li a img {
+  height: 15px;
+}
+.footerBar h5 {
+  color: #FFFFFF;
+  font-size: 10px;
+}
+
+.lineaBlanca {
+  background-color: #FFFFFF;
+  height: 3px;
+}
+
+.agregarPuerta {
+  display: none;
+}
+
+.checkPuerta:checked + .agregarPuerta {
+  display: block;
+}
+
+.agregarVentana {
+  display: none;
+}
+
+.checkVentana:checked + .agregarVentana {
+  display: block;
+}
+
+.btnInicioCalculadora {
+  display: block;
+}
+
+.contenedorSimulador {
+  display: none;
+}
+
+.datosPersonales {
+  display: none;
+}
+
+.resultadoCalculadora {
+  display: none;
+}
+
+.carritoIco {
+  display: none;
+}
+
+.carritoMenu {
+  display: none;
+}
+
+input:checked + .carritoMenu {
+  display: flex;
+}
+
+.carritoMenu {
+  position: absolute;
+  top: 85px;
+  right: 0px;
+  width: 292px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 6px 6px rgba(44, 43, 43, 0.25);
+}
+
+.contendorCarrito {
+  overflow-y: scroll;
+  height: calc(100vh - 250px);
+}
+
+.cardCarrito {
+  border-bottom: solid 2px #F19F4D;
+}
+
+.cardPintura {
+  background-color: rgba(254, 254, 254, 0.606);
+  width: 190px;
+  border-radius: 0;
+  transition: all 0.5s;
+  border: solid 1px rgb(226, 226, 226);
+  padding-top: 10px;
+}
+
+.cardPintura:hover {
+  transform: scale(1.08);
+  box-shadow: 2px 5px 10px 6px rgba(44, 43, 43, 0.25);
+  background-color: #FFFFFF;
+}
+
+.cardImg {
+  width: 170px;
+  height: 170px;
+}
+.cardImg img {
+  width: 170px;
+}
+
+.cardTexto {
+  width: 180px;
+}
+.cardTexto h4 {
+  font-size: 25px;
+  color: rgb(75, 74, 74);
+}
+.cardTexto h5 {
+  font-size: 13px;
+}
+.cardTexto p {
+  font-size: 16px;
+}
+
+.cardCosto h5 {
+  font-size: 15px;
+}
+.cardCosto h4 {
+  font-size: 25px;
+}
+
+.cardBtn {
+  width: 120px;
+  background-color: #4484CE;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.carritoImg img {
+  height: 25px;
+}
+
+.carritoBar {
+  height: 35px;
+  background-color: #F19F4D;
+  width: 340px;
+}
+
+.cantCarrito h5 {
+  color: #4484CE;
+  font-size: 15px;
+  font-style: bold;
+}
+
+.carritoBarBack {
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
+  height: 35px;
+}
+.carritoBarBack h3 {
+  font-size: 20px;
+}
+
+.btnVaciar {
+  background-color: #F19F4D;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.btnComprar {
+  background-color: #4484CE;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.formCarrito {
+  width: 90%;
+  border: solid 2px #F19F4D;
+  border-radius: 5px;
+}
+
+.marqueeClass {
+  font-size: 10px;
+  color: #606163;
+}
+
+.contactoMapa {
+  height: 90%;
+  width: 100%;
+}
+
+.contactoForm, .contactoFormTxt {
+  border-radius: 5px;
+  border: solid 2px #F19F4D;
+  color: #606163;
+}
+
+.contactoFormTxt {
+  height: 150px;
+}
+
+.formBtn {
+  border-radius: 5px;
+  background-color: #F19F4D;
+  color: #FFFFFF;
+  border: none;
+}
+
+.adminConsultas {
+  border-bottom: solid 2px #4484CE;
+}
+.adminConsultas h5 {
+  font-size: 35px;
+}
+
+.adminBoxItem {
+  border: solid 2px #F19F4D;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.adminContactoNombre {
+  font-size: 30px;
+}
+
+.detalleCompra {
+  border-bottom: solid 2px #4484CE;
+}
+.detalleCompra div h5 {
+  font-size: 13px;
+}
+.detalleCompra div h4 {
+  font-size: 18px;
+}
+.detalleCompra div h3 {
+  font-size: 20px;
+}
+
+.personaCompra {
+  font-size: 15px;
+}
+
+.loginForm {
+  border: solid 2px #F19F4D;
+  border-radius: 5px;
+}
+
+.loginBtn {
+  border: none;
+  background-color: #F19F4D;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.v100 {
+  height: calc(100vh - 120px);
+}
+
+.hola {
+  margin-bottom: 20px;
+}

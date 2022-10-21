@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icono.ico">
+    <title>ColorHouse</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="fixed-top">
+        <div class="lineaCeleste">
+        </div>
+        <div class="navBarra d-flex justify-content-between align-items-center">
+            <div class="logoImg ms-5">
+                <a class="" href="./index.html"><img class="" src="./assets/img/logo.jpg" alt="Logo"></a>
+            </div>
+            <ul class="navList d-flex m-3">
+                <li class="mx-3"><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li class="mx-3"><a href="./pages/galeria.html">Galeria</a></li>
+                <li class="mx-3"><a href="./pages/tienda.html">Tienda</a></li>
+                <li class="mx-3"><a href="./pages/contacto.html">Contacto</a></li>
+                <li class="mx-3"><a href="./pages/login.html"><img src="./assets/img/login.png" alt="Login"></a></li>
+            </ul>
+        </div>
+        <div class="lineaNaranja">
+        </div>
+    </nav>
+
+    <main class="mainClass my-5">
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/home01.jpg" class="d-block w-100" alt="Home 01">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home02.jpg" class="d-block w-100" alt="Home 02">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home03.jpg" class="d-block w-100" alt="Home 03">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home04.jpg" class="d-block w-100" alt="Home 04">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home05.jpg" class="d-block w-100" alt="Home 05">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home06.jpg" class="d-block w-100" alt="Home 06">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/home07.jpg" class="d-block w-100" alt="Home 07">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cajaCalculadora d-flex justify-content-center p-5">
+            <div id="btnInicioCalculadora" class="cajaCalculadoraDos d-flex flex-column align-items-center py-5">
+                <p class="txtInicioCalculadora col-8 text-center">¡Proba nuestra Calculadora de Pintura y descubrí cuanta pintura necesitas para tus paredes! </p>
+                <button onclick="mostrarForm();" class="btnInicioCalculadora px-5 py-2 mx-5" id="inicioSimulador">Calcula cuanta pintura necesitas</button>           
+            </div>
+            <div id="contenedorSimulador" class="contenedorSimulador col-12">
+                
+                <div class="col-9 ingresoDeDatos p-5">
+                    <div class="d-flex flex-column align-items-center col-12">
+                        <h4 class="txtCalcu">Ingresá tus datos personales</h4>
+                        <div class="d-flex justify-content-between col-11">
+                            <input class="formclass col-5 px-2" type="text" name="" id="nombre" placeholder="Ingresa tu nombre" required>
+                            <input class="formclass col-5 px-2" type="email" name="" id="email" placeholder="Ingresa tu eMail" required>
+                        </div>
+                        <div class="d-flex flex-column align-items-center col-12 mx-4 my-3">
+                            <h4 class="txtCalcu">Selecciona el tipo de pintura</h4>
+                            <select class="formclass col-11" name="" id="seleccionDePintura" required>
+                                <option hidden selected>Selecciona una opción</option>
+                                <option value="latex">Latex</option>
+                                <option value="alAgua">Al Agua</option>
+                                <option value="sintentica">Sintentica</option>
+                                <option value="acrilica">Acrilica</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="pared d-flex flex-column align-items-center">
+                        <div class="d-flex flex-column align-items-center col-12">
+                            <h4 class="txtCalcu">Ingresá las medidas en Metros (Ej: 2.65  /  1.80)</h4>
+                            <form id="formuPared" class="d-flex justify-content-between col-11" action="">
+                                <input id="altoPared" class="formclass col-5 px-2" type="number" placeholder="Alto">
+                                <input id="anchoPared" class="formclass col-5 px-2" type="number" placeholder="Ancho">
+                            </form>
+                        </div>
+                        <div class="d-flex col-12 justufy-content-center my-3">
+                            <div class="col-6 d-flex flex-column align-items-center">
+                                <label for="checkPuerta"><h5 class="btnCalcu px-3 py-1 d-flex">Agregar Puerta</h5></label>
+                                <input class="checkPuerta d-none" type="checkbox" name="" id="checkPuerta">
+                                <div class="agregarPuerta">
+
+                                    <form id="formuPuerta" class="d-flex justify-content-around" action="">
+                                        <input id="altoPuerta" class="formclass col-5 px-2" type="number" placeholder="Alto">
+                                        <input id="anchoPuerta" class="formclass col-5 px-2" type="number" placeholder="Ancho">
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 d-flex flex-column align-items-center">
+                                <label for="checkVentana"><h5 class="btnCalcu px-3 py-1 d-flex">Agregar Ventana</h5></label>
+                                <input class="checkVentana d-none" type="checkbox" name="" id="checkVentana">
+                                <div class="agregarVentana">
+
+                                    <form id="formuVentana" class="d-flex justify-content-around" action="">
+                                            <input id="altoVentana" class="formclass col-5 px-2" type="number" placeholder="Alto">
+                                            <input id="anchoVentana" class="formclass col-5 px-2" type="number" placeholder="Ancho">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <button id="btnCaptura" class="btnInicioCalculos m-2">Agregar otra Pared</button>
+                        <button onclick="calcularFn();" id="btnCalcular" class="btnInicioCalculos m-2">Calcular</button>
+                        <button id="refresh1" class="btnInicioCalculadora refresh m-2">Empezar de nuevo!</button>
+                    </div>
+                </div>
+
+                <div id="listaParedes" class="listaParedes col-3">
+
+                </div>
+            </div>
+                
+            <div id="resultadoCalculadora" class="resultadoCalculadora flex-column align-items-center col-12">
+                <div class="contenedorSimulador px-5 d-flex flex-column col-12">
+                    <div id="resultadoCalculadoraMensaje" class="resultadoCalculadoraMensaje d-flex justify-content-center col-12">
+
+                    </div>
+                    <button id="refresh2" class="btnInicioCalculadora refresh m-2">Empezar de nuevo!</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerBar fixed-bottom">
+            <div class="lineaBlanca">
+            </div>
+            <div class="d-flex justify-content-between">
+                <h5 class="ms-5 pt-2">© 2022 Mammana Javier, todos los derechos reservados.-</h5>
+                <ul class="d-flex me-5">
+                    <li class="mx-2"><a href="https://www.facebook.com" target="_blank"><img src="./assets/img/facebook.png" alt="FaceBook"></a></li>
+                    <li class="mx-2"><a href="https://twitter.com" target="_blank"><img src="./assets/img/tweeter.png" alt="Tweeter"></a></li>
+                    <li class="mx-2"><a href="https://www.instagram.com" target="_blank"><img src="./assets/img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="./assets/js/calculadora.js"></script>
+
+</body>
+</html>

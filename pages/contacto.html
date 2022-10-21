@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icono.ico">
+    <title>ColorHouse - Contacto</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="fixed-top">
+        <div>
+            <div class="lineaCeleste">
+            </div>
+            <div class="navBarra d-flex justify-content-between align-items-center">
+                <div class="logoImg ms-5">
+                    <a class="" href="../index.html"><img class="" src="../assets/img/logo.jpg" alt="Logo"></a>
+                </div>
+                <ul class="navList d-flex m-3">
+                    <li class="mx-3"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="mx-3"><a href="../pages/galeria.html">Galeria</a></li>
+                    <li class="mx-3"><a href="../pages/tienda.html">Tienda</a></li>
+                    <li class="mx-3"><a href="../pages/contacto.html">Contacto</a></li>
+                    <li class="mx-3"><a href="../pages/login.html"><img src="../assets/img/login.png" alt="Login"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lineaNaranja">
+
+        </div>
+    </nav>
+
+
+    <main class="my-5">
+        <div class="d-flex justify-content-evenly p-5">
+            <div class="col-5">
+                <form id="formContacto" class="d-flex flex-column">
+                    <input class="contactoForm px-2 m-2" id="nombreContacto" type="text" placeholder="Ingresa Nombre">
+                    <input class="contactoForm px-2 m-2" id="apellidoContacto" type="text" placeholder="Ingresa Apellido">
+                    <input class="contactoForm px-2 m-2" id="mailContacto" type="text" placeholder="Ingresa eMail">
+                    <input class="contactoForm px-2 m-2" id="telefonoContacto" type="text" placeholder="ingresa tu Telefono">
+                    <textarea class="contactoFormTxt px-2 m-2" name="" id="consultaContacto" cols="30" rows="10" placeholder="Contanos tu consulta..."></textarea>
+
+                    <button id="formBtn" class="formBtn m-2">Enviar</button>
+                </form>
+            </div>
+            <div class="col-5">
+                <iframe class="contactoMapa mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.694326242633!2d-64.24481368529666!3d-31.394990981411205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x339207cb8ce4afe1!2zMzHCsDIzJzQyLjAiUyA2NMKwMTQnMzMuNSJX!5e0!3m2!1ses-419!2sar!4v1664941142261!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerBar fixed-bottom">
+            <div class="lineaBlanca">
+            </div>
+            <div class="d-flex justify-content-between">
+                <h5 class="ms-5 pt-2">© 2022 Mammana Javier, todos los derechos reservados.-</h5>
+                <ul class="d-flex align justify-content-end me-5">
+                    <li class="mx-2"><a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png" alt="FaceBook"></a></li>
+                    <li class="mx-2"><a href="https://twitter.com" target="_blank"><img src="../assets/img/tweeter.png" alt="Tweeter"></a></li>
+                    <li class="mx-2"><a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+
+    </footer>
+
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="../assets/js/contacto.js"></script>
+
+</body>
+</html>
