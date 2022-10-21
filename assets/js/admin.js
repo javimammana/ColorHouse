@@ -74,9 +74,11 @@ for (let element of arrayCompras) {
     
 
         let total = 0;
-        arrayProductosComprados.forEach(prod => {
-            total += prod.precio * prod.cantidad;
-        })
+
+        for (prod of arrayProductosComprados) {
+            total+= prod.precio * prod.cantidad;
+        }
+
         //console.log (total);
         const montoCompra = total;
     
