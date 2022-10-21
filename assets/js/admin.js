@@ -74,8 +74,8 @@ for (let element of arrayCompras) {
     
 
         let total = 0;
-        arrayProductosComprados.forEach(producto => {
-            total += producto.precio * producto.cantidad;
+        arrayProductosComprados.forEach(prod => {
+            total += prod.precio * prod.cantidad;
         })
         //console.log (total);
         const montoCompra = total;
@@ -135,8 +135,6 @@ for (let element of arrayCompras) {
 
 }
 
-comprasAdmin ();
-
 const borrarCompra = (id) => {
     const itemCompra = arrayCompras.find (arrayCompras => arrayCompras.id === id);
     arrayCompras.splice(arrayCompras.indexOf(itemCompra),1);
@@ -144,6 +142,8 @@ const borrarCompra = (id) => {
     comprasAdmin();
     console.log(arrayCompras);
 }
+
+comprasAdmin ();
 
 for (let elem of arrayCompras) {
     let compraId = elem.id;
